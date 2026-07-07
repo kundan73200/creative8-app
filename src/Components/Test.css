@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.card {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 80px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 24px;
+}
+
+.card p {
+  margin-top: 20px;
+  line-height: 25px;
+}
+
+.card.active {
+  height: 180px;
+}

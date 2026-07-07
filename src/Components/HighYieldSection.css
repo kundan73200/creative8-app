@@ -1,0 +1,353 @@
+.hy-section {
+  width: 100%;
+  background: radial-gradient(circle at top left, #11111a 0%, #07070b 45%, #050507 100%);
+  padding: 90px 0 90px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.hy-container {
+  width: 1280px;
+  max-width: calc(100% - 120px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.95fr 1.35fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* LEFT SIDE */
+.hy-left {
+  padding-top: 10px;
+}
+
+.hy-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(130, 97, 255, 0.25);
+  background: rgba(80, 45, 160, 0.18);
+  color: #8f77ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.hy-heading {
+    margin: 0;
+    font-size: 54px;
+    line-height: 0.98;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: #ffffff;
+}
+
+.hy-heading span {
+  background: linear-gradient(90deg, #8c5bff 0%, #ff4b91 50%, #ff7a21 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hy-description {
+  margin: 28px 0 38px;
+  max-width: 430px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 17px;
+  line-height: 1.75;
+  font-weight: 500;
+}
+
+/* CALL CARD */
+.hy-call-card {
+  width: 100%;
+  max-width: 470px;
+  background: linear-gradient(180deg, rgba(20, 20, 24, 0.96) 0%, rgba(12, 12, 16, 0.96) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
+}
+
+.hy-call-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.hy-avatars {
+  display: flex;
+  align-items: center;
+}
+
+.hy-avatars img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #17171d;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.06);
+}
+
+.hy-avatars img + img {
+  margin-left: -16px;
+}
+
+.hy-call-text h4 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.15;
+}
+.hy-call-text p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.52);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.hy-call-btn {
+    padding: 16px 36px;
+    width: 100%;
+    /* height: 72px; */
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: linear-gradient(90deg, #7a5cff 0%, #ff4f92 55%, #ff7828 100%);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hy-call-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(130, 85, 255, 0.22);
+}
+
+/* RIGHT SIDE ACCORDION */
+.hy-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hy-accordion {
+  background: linear-gradient(180deg, rgba(18, 18, 24, 0.95) 0%, rgba(10, 10, 14, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.hy-accordion.active {
+  background: linear-gradient(180deg, rgba(28, 28, 38, 0.95) 0%, rgba(16, 16, 24, 0.96) 100%);
+}
+
+.hy-accordion-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 24px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.hy-accordion-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hy-accordion-icon {
+  width: 62px;
+  height: 62px;
+  min-width: 62px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.hy-accordion-title {
+    margin: 0;
+    font-size: 20px;
+    /* font-weight: 800; */
+    transition: color 0.3s ease;
+}
+.hy-accordion-arrow {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  border-radius: 50%;
+  background: rgba(120, 120, 150, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hy-accordion-arrow.rotate {
+  transform: rotate(0deg);
+}
+
+.hy-accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease;
+  padding: 0 24px;
+}
+
+.hy-accordion-body.open {
+  max-height: 220px;
+  padding: 0 24px 22px 24px;
+}
+
+.hy-accordion-divider {
+  height: 1px;
+  width: calc(100% - 8px);
+  background: rgba(255, 255, 255, 0.08);
+  margin: 0 0 16px 78px;
+}
+
+.hy-accordion-body p {
+  margin: 0 0 0 78px;
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 92%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1400px) {
+  .hy-heading {
+    font-size: 64px;
+  }
+
+  .hy-call-text h4 {
+    font-size: 24px;
+  }
+
+  .hy-call-text p {
+    font-size: 16px;
+  }
+
+  .hy-call-btn {
+    height: 64px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .hy-container {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    max-width: calc(100% - 40px);
+  }
+
+  .hy-left,
+  .hy-right {
+    width: 100%;
+  }
+
+  .hy-description,
+  .hy-call-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hy-section {
+    padding: 70px 0;
+  }
+
+  .hy-heading {
+    font-size: 42px;
+    line-height: 1.02;
+  }
+
+  .hy-description {
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 20px 0 28px;
+  }
+
+  .hy-call-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .hy-avatars img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .hy-call-text h4 {
+    font-size: 18px;
+  }
+
+  .hy-call-text p {
+    font-size: 13px;
+  }
+
+  .hy-call-btn {
+    height: 56px;
+    font-size: 16px;
+  }
+
+  .hy-accordion-header {
+    padding: 18px;
+  }
+
+  .hy-accordion-left {
+    gap: 12px;
+  }
+
+  .hy-accordion-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 14px;
+    font-size: 22px;
+  }
+
+  .hy-accordion-title {
+    font-size: 16px;
+  }
+
+  .hy-accordion-arrow {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 18px;
+  }
+
+  .hy-accordion-divider {
+    margin-left: 60px;
+  }
+
+  .hy-accordion-body p {
+    margin-left: 60px;
+    font-size: 14px;
+    max-width: 100%;
+  }
+}
